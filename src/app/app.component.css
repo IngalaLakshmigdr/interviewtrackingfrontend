@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  

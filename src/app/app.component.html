@@ -1,0 +1,11 @@
+<div *ngIf="isLoggedIn()">
+  <p>Welcome to Dashboard, authenticated user!</p>
+</div>
+
+<div *ngIf="!isLoggedIn()">
+  <h2>Welcome To Interview Tracking System</h2>
+  <h5>Please fill the credentials to login as admin</h5>
+</div>
+
+<!-- Only one router outlet -->
+<router-outlet></router-outlet>

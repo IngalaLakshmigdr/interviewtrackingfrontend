@@ -1,0 +1,8 @@
+<nav>
+  <a routerLink="/dashboard" *ngIf="isLoggedIn()">Dashboard</a>
+  <a routerLink="/admin" *ngIf="role === 'admin'">Admin Dashboard</a>
+  <a routerLink="/tech-panel" *ngIf="role === 'tech'">Tech Panel</a>
+  <a routerLink="/hr-panel" *ngIf="role === 'hr'">HR Panel</a>
+  <a routerLink="/login" *ngIf="!isLoggedIn()">Login</a>
+  <button *ngIf="isLoggedIn()" (click)="logout()">Logout</button>
+</nav>
